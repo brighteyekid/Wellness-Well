@@ -4,7 +4,7 @@
 # **Wellness-Well: AI-Powered Health Prediction Platform**
 
 <div align="center">
-  <img src="frontend/public/favicon.ico" alt="Wellness-Well Logo" width="100"/>
+  <img src="/public/favicon.ico" alt="Wellness-Well Logo" width="100"/>
 
   [![GitHub License](https://img.shields.io/github/license/brighteyekid/Wellness-Well)](https://github.com/brighteyekid/Wellness-Well/blob/main/LICENSE)
   [![GitHub Stars](https://img.shields.io/github/stars/brighteyekid/Wellness-Well)](https://github.com/brighteyekid/Wellness-Well/stargazers)
