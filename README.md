@@ -173,6 +173,3 @@ For any queries or support, reach out to us:
   ⭐ Star this repository if you find it helpful!
 </div>
 
----
-
-This version improves formatting, corrects any structural inconsistencies, and uses the favicon from your public folder. Let me know if you’d like further refinements!
