@@ -4,7 +4,7 @@ async function query(message: string) {
   console.log("Sending request to API...");
 
   const response = await fetch(
-    "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-v0.1",
+    "https://api-inference.huggingface.co/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B/v1/chat/completions",
     {
       method: "POST",
       headers: {
@@ -12,7 +12,12 @@ async function query(message: string) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        inputs: message,
+        messages: [  // Corrected field name here
+          {
+            role: "user",  // The user's message
+            content: message,  // The content of the message
+          },
+        ],
         parameters: {
           max_new_tokens: 100,
           temperature: 0.7,
@@ -24,6 +29,7 @@ async function query(message: string) {
       }),
     }
   );
+  
 
   if (!response.ok) {
     const errorText = await response.text();
